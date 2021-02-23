@@ -16,7 +16,7 @@ class ProductsTest < ApplicationSystemTestCase
     fill_in "product_name", with: "Le Wagon"
     fill_in "product_tagline", with: "Change your life: learn to code"
 
-    click_on 'Create product'
+    click_on 'Create Product'
 
     assert_equal root_path, page.current_path
     assert_text "Change your life: learn to code"
