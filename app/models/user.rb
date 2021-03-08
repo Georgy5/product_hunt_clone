@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   def full_name
-    return first_name.capitalize + ' ' + last_name.capitalize
+    return "#{first_name.capitalize} #{last_name.capitalize}"
   end
 end
